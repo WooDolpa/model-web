@@ -1,0 +1,43 @@
+<section class="form-dark-background" #askForm>
+
+  <div class="form-section">
+    <div class="form-group">
+      <h1 class="form-header ask-header-txt">문의하기</h1>
+    </div>
+  </div>
+  <div class="form-section">
+    <div class="form-group">
+      <label for="content" class="ask-form-txt">문의 상담내용 (*필수)</label>
+      <textarea type="text" class="ask-textarea" id="content" name="content" [(ngModel)]="model.contents"></textarea>
+    </div>
+  </div>
+  <div class="form-section">
+    <div class="form-group">
+      <label for="userName" class="ask-form-txt">이름 (*필수)</label>
+      <input type="text" id="userName" value="" class="ask-input" name="userName" [(ngModel)]="model.name">
+    </div>
+  </div>
+  <div class="form-section">
+    <div class="form-group">
+      <label for="phone" class="ask-form-txt">연락처 (*필수)</label>
+      <input type="text" id="phone" value="" class="ask-input" name="phone" [(ngModel)]="model.phone">
+    </div>
+  </div>
+  <div class="form-section">
+    <div class="form-group">
+      <label for="email" class="ask-form-txt">이메일 (*필수)</label>
+      <input type="text" id="email" value="" class="ask-input" name="email" [(ngModel)]="model.email">
+    </div>
+  </div>
+  <div class="form-section btn-section">
+    <div class="form-group">
+      <button type="button" class="ask-btn" (click)="submitEvent()">문의하기</button>
+    </div>
+  </div>
+
+  <div class="custom-footer">
+    <span class="custom-copyright">Copyright &copy; {{company}}</span>
+  </div>
+
+</section>
+

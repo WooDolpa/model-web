@@ -1,0 +1,13 @@
+.page-position{
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+
+@media only screen and (max-width: 479px) and (min-width: 320px)
+{
+    .page-position{
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+}

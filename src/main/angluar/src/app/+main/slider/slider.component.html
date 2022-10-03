@@ -1,0 +1,13 @@
+<section class="section-height">
+  <carousel [interval]="model.interval" [noWrap]="model.noWrap">
+    <slide *ngFor="let slide of model.slides" [active]="slide.active">
+      <img [src]="slide.imgUrl" style="width: 100%; max-height: 600px;">
+
+      <div class="carousel-caption">
+        <p class="carousel-title">{{slide.title}}</p>
+
+        <p class="carousel-contents">{{slide.content}}</p>
+      </div>
+    </slide>
+  </carousel>
+</section>

@@ -1,0 +1,64 @@
+<div id="extr-page">
+
+  <!-- navigation -->
+  <app-navigation (moveFormEvent)="moveEvent($event)"></app-navigation>
+
+  <section class="section-height" *ngIf="categoryRows.length > 0">
+
+    <div class="page-position">
+
+      <ul class="nav nav-tabs bordered custom-ul-border">
+        <li [class.active]="state.tabs.demo1 == index" *ngFor="let categoryRow of categoryRows; let index = index;">
+          <a (click)="showItemList(index)" >{{categoryRow.name}}</a>
+        </li>
+      </ul>
+
+      <tabset class="padding-10">
+        <tab [active]="state.tabs.demo1 == 0">
+          <div class="row">
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 item-box" *ngFor="let row of rows;">
+              <a (click)="openModal(row)">
+                <img [src]="row.galleryImg" alt="">
+              </a>
+            </div>
+          </div>
+        </tab>
+        <tab [active]="state.tabs.demo1 == 1">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 item-box" *ngFor="let row of rows;">
+              <a (click)="openModal(row)">
+                <img [src]="row.galleryImg" alt="">
+              </a>
+            </div>
+
+          </div>
+        </tab>
+      </tabset>
+
+    </div>
+
+  </section>
+
+  <ng-template #imgModal>
+    <div class="modal-body" style="text-align: center;">
+      <p style="font-size: 25px; font-weight: bold;">{{model.title}}</p>
+      <hr class="simple">
+      <img src="{{model.imgUrl}}" style="max-width: 100%; height: auto;" class="text-align-center">
+      <hr class="simple">
+      <h4>{{model.content}}</h4>
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+          <div class="text-align-right" *ngIf="model.url">
+            <a class="btn btn-warning pull-right button-area" [href]="model.url" target="_blank"><i class="fa fa-check-circle"></i> {{txt}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+
+  <!-- custom -->
+  <app-custom [status]="formStatus"></app-custom>
+
+</div>

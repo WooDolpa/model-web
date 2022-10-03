@@ -1,0 +1,139 @@
+/** common **/
+.form-dark-background {
+    margin-top: 20px;
+    background-color: white;
+}
+
+
+.custom-footer{
+    border-top: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 479px) and (min-width: 320px)
+{
+
+    .form-section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .ask-header-txt {
+        padding-top: 10px;
+        color: black;
+        font-size: 27px;
+        font-weight: 700;
+    }
+
+    .ask-form-txt {
+        color: black;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .ask-textarea {
+        resize: none;
+        width: 100%;
+        height: 150px;
+        border: 1px solid black;
+        border-radius: 30px;
+    }
+
+    .ask-input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid black;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    .btn-section {
+        text-align: center;
+    }
+
+    .ask-btn {
+        font-size: 25px;
+        font-weight: 700;
+        color: black;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 25px;
+    }
+
+    .ask-btn:hover {
+        background-color: #2980b9;
+        color: white;
+    }
+    .custom-copyright{
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+
+    .form-dark-background > .form-section {
+        margin-left: 30%;
+    }
+
+    .form-section {
+        margin-left: 10px;
+        width: 450px;
+    }
+
+    .ask-header-txt {
+        padding-top: 10px;
+        color: black;
+        font-size: 27px;
+        font-weight: 700;
+    }
+
+    .ask-form-txt {
+        color: black;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .ask-textarea {
+        resize: none;
+        width: 100%;
+        height: 150px;
+        border: 1px solid black;
+        border-radius: 30px;
+    }
+
+    .ask-input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid black;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    .btn-section {
+        text-align: center;
+    }
+
+    .ask-btn {
+        font-size: 25px;
+        font-weight: 700;
+        color: black;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 25px;
+    }
+
+    .ask-btn:hover {
+        background-color: black ;
+        color: white;
+    }
+    .custom-copyright{
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}

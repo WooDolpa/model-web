@@ -1,0 +1,40 @@
+<div id="extr-page">
+
+    <!-- navigation -->
+    <app-navigation (moveFormEvent)="moveEvent($event)"></app-navigation>
+
+    <!-- item list -->
+    <section class="section-height">
+        <div class="page-position">
+
+            <ul class="nav nav-tabs bordered custom-ul-border">
+                <li [class.active]="state.tabs.demo1 == index" *ngFor="let categoryRow of typeRows; let index = index;">
+                    <a (click)="showItemList(index)" >{{categoryRow.name}}</a>
+                </li>
+            </ul>
+
+            <table class="table table-bordered table-striped custom-table" *ngIf="isResulted">
+                <tbody>
+                <tr *ngFor="let row of rows">
+                    <div *ngIf="row.url; then urlTxt else txt"></div>
+                    <ng-template #urlTxt><td><a href="{{row.url}}" target="_blank">{{row.awardName}}</a></td></ng-template>
+                    <ng-template #txt><td>{{row.awardName}}</td></ng-template>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="row table-area" *ngIf="!isResulted">
+                <hr>
+                <alert type="warning">
+                    <h4 class="alert-heading text-align-center"> 정보가 없습니다.</h4>
+                </alert>
+                <hr>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- custom -->
+    <app-custom [status]="formStatus"></app-custom>
+
+</div>

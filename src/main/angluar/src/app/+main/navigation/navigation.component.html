@@ -1,0 +1,55 @@
+<!-- header -->
+<div class="header">
+    <div class="logo">
+        <img [src]="logo" alt="건축사사무소 19341" routerLink="">
+    </div>
+    <div class="contents">
+        <ul class="web">
+            <li *ngFor="let row of rows" routerLinkActive="active">
+                <a [routerLink]="row.link">
+                    <span>{{row.title}}</span>
+                </a>
+            </li>
+            <li>
+                <a routerLinkActive="active" (click)="moveForm()">문의하기</a>
+            </li>
+        </ul>
+    </div>
+<!--    <div class="site">-->
+<!--        <ul class="web">-->
+<!--            <li>-->
+<!--                <a href="http://product.a19341.com" target="_blank">-->
+<!--                    <span>디자인</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--&lt;!&ndash;                <a href="http://web.a19341.com" target="_blank" >WEB</a>&ndash;&gt;-->
+<!--                <a (click)="notice()" >WEB</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+</div>
+<!-- header mobile-->
+<div class="mobile">
+    <nav>
+        <ul>
+            <li *ngFor="let row of rows" routerLinkActive="active">
+                <a [routerLink]="row.link">
+                    <span>{{row.title}}</span>
+                </a>
+            </li>
+            <li>
+                <a routerLinkActive="active" (click)="moveForm()">문의하기</a>
+            </li>
+<!--            <li>-->
+<!--                <a href="http://product.a19341.com" target="_blank">-->
+<!--                    <span>디자인</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--&lt;!&ndash;                <a href="http://web.a19341.com" target="_blank" >WEB</a>&ndash;&gt;-->
+<!--                <a (click)="notice()" >WEB</a>-->
+<!--            </li>-->
+        </ul>
+    </nav>
+</div>

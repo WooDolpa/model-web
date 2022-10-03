@@ -1,0 +1,25 @@
+
+.text-header {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.2;
+    color: inherit;
+    font-size: 2.5rem;
+}
+
+.page-position{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.header-position {
+    padding-top: 35px;
+}
+
+.custom-table { border-left: none; border-right: none;}
+
+@media (max-width: 767px){
+
+}

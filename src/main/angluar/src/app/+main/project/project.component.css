@@ -1,0 +1,52 @@
+.project-box {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.custom-ul-border {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+.text-header {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.2;
+    color: inherit;
+    font-size: 2.5rem;
+}
+
+.page-position{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.header-position {
+    padding-top: 35px;
+}
+
+@media only screen and (max-width: 479px) and (min-width: 320px)
+{
+
+    .item-box > a > img {
+        width: 100%;
+        margin-top: 15px;
+        box-shadow: 0 0 50px 12px #d6cece;
+        -webkit-box-shadow: 0 0 50px 12px #d6cece;
+        -moz-box-shadow: 0 0 50px 12px #d6cece;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+
+    .item-box > a > img {
+        width: 100%;
+        height: 200px;
+        margin-top: 15px;
+        box-shadow: 0 0 50px 12px #d6cece;
+        -webkit-box-shadow: 0 0 50px 12px #d6cece;
+        -moz-box-shadow: 0 0 50px 12px #d6cece;
+    }
+}
